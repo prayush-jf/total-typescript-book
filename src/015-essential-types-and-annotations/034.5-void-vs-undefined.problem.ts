@@ -1,4 +1,4 @@
-const acceptsCallback = (callback: () => undefined) => {
+const acceptsCallback = (callback: () => undefined | string) => {
   callback();
 };
 
