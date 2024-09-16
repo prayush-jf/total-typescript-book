@@ -2,7 +2,7 @@ import { Expect, Equal } from "@total-typescript/helpers";
 
 import { expect, it } from "vitest";
 
-const concatName = (first: string, last?: string) => {
+const concatName = (first: string, last = "Pocock") => {
   if (!last) {
     return first;
   }
@@ -25,3 +25,14 @@ it("should return the first name", () => {
 
   expect(result).toEqual("John Pocock");
 });
+
+type Mapper = (item: string) => number;
+
+const mapOverItems = (items: string[], map: Mapper) => {
+  return items.map(map);
+};
+
+let arrayStringsToNumbers = mapOverItems(
+  ["2", "43", "everything"],
+  (item: string) => Number(item)
+);

@@ -8,7 +8,7 @@ const setRange = (range: [number, number]) => {
 
   type tests = [
     Expect<Equal<typeof x, number>>,
-    Expect<Equal<typeof y, number>>,
+    Expect<Equal<typeof y, number>>
   ];
 };
 
