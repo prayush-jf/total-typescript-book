@@ -1,4 +1,6 @@
-interface Scores {}
+interface Scores extends Record<"math" | "english" | "science", number> {
+  [subject: string]: number;
+}
 
 // @ts-expect-error science is missing!
 const scores: Scores = {
