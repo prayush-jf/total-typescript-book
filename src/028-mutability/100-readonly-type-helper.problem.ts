@@ -1,9 +1,9 @@
 type SearchParams = {
-  q?: string;
-  page?: number;
-  pageSize?: number;
-  sort?: string;
-  order?: "asc" | "desc";
+  readonly q?: string;
+  readonly page?: number;
+  readonly pageSize?: number;
+  readonly sort?: string;
+  readonly order?: "asc" | "desc";
 };
 
 const handleSearchParams = (search: SearchParams) => {

@@ -1,8 +1,8 @@
 import { it, expect } from "vitest";
 
-function add() {
+const add = () => {
   return this.x + this.y;
-}
+};
 
 const setValues = (x: number, y: number) => {
   this.x = x;

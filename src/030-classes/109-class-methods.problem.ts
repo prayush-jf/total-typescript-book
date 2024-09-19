@@ -3,6 +3,11 @@ import { expect, it } from "vitest";
 class CanvasNode {
   x = 0;
   y = 0;
+
+  move(posX: number, posY: number) {
+    this.x = posX;
+    this.y = posY;
+  }
 }
 
 it("Should be able to move", () => {
