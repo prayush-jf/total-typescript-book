@@ -21,5 +21,5 @@ routes["/"].component = "About";
 
 type tests = [
   Expect<Equal<(typeof routes)["/"]["component"], "Home">>,
-  Expect<Equal<(typeof routes)["/about"]["component"], "About">>,
+  Expect<Equal<(typeof routes)["/about"]["component"], "About">>
 ];
